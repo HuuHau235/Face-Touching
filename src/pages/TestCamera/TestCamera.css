@@ -1,0 +1,82 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-align: center;
+}
+
+.main.touched {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.main {
+  text-align: center;
+  padding: 20px;
+}
+
+.video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #1B6392;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #15507a;
+}
+
+.btn.stop {
+  background-color: #c0392b;
+}
+
+.btn.stop:hover {
+  background-color: #992d22;
+}
+
+.start-message {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #27ae60;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .btn {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .video {
+    width: 100%;
+  }
+}
