@@ -26,7 +26,7 @@ const Header = () => {
         </div>
 
         <nav className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}>
-          <a href="/home">Home</a>
+          <a href="/">Home</a>
           <a href="/product">Product</a>
           <a href="/combo">Combo</a>
           <a href="/blog">Blog</a>
