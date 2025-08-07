@@ -13,11 +13,6 @@ const Header = () => {
           <span>Careers</span>
           <span>Blogs</span>
         </div>
-        <div className="top-icons">
-          <span className="dot" />
-          <span className="dot" />
-          <span className="dot" />
-        </div>
       </div>
 
       <div className="main-nav">
@@ -27,10 +22,7 @@ const Header = () => {
 
         <nav className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}>
           <a href="/">Home</a>
-          <a href="/product">Product</a>
-          <a href="/combo">Combo</a>
-          <a href="/blog">Blog</a>
-          <a href="/about">About us</a>
+
         </nav>
 
         <div className="mobile-toggle" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
