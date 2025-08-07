@@ -3,10 +3,8 @@
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  max-width: 100vw;
 }
 
-/* Hero Section */
 .hero-section {
   background: linear-gradient(135deg, #00c9ff, #92fe9d);
   text-align: center;
@@ -39,7 +37,6 @@
   background-color: #e0f7fa;
 }
 
-/* Features Section */
 .features-section {
   display: flex;
   justify-content: center;
@@ -54,7 +51,7 @@
   padding: 20px;
   width: 280px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
   transition: transform 0.3s;
 }
@@ -63,27 +60,9 @@
   transform: translateY(-10px);
 }
 
-.feature-card img {
-  width: 100%;
-  max-width: 200px;
-  margin-bottom: 15px;
-}
-
-/* Video Section */
 .video-section {
   text-align: center;
   padding: 40px 20px;
-}
-
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
 }
 
 .video-wrapper iframe {
@@ -94,7 +73,6 @@
   height: 100%;
 }
 
-/* Footer */
 .footer {
   background-color: #1a1a1a;
   color: white;
@@ -102,16 +80,7 @@
   padding: 20px;
 }
 
-.footer p {
-  margin: 0;
-}
-
-/* Tablet (≤768px) */
 @media (max-width: 768px) {
-  .hero-section {
-    padding: 50px 15px;
-  }
-
   .hero-section h1 {
     font-size: 32px;
   }
@@ -141,7 +110,6 @@
   }
 }
 
-/* Mobile (≤480px) */
 @media (max-width: 480px) {
   .hero-section {
     padding: 40px 10px;
@@ -160,11 +128,190 @@
     font-size: 13px;
   }
 
-  .feature-card {
-    padding: 16px;
-  }
-
   .footer p {
     font-size: 12px;
+  }
+}
+
+.home-container {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f9ff;
+  padding: 2rem 1rem;
+  color: #1f2937;
+  max-width: 1000px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 4rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: #374151;
+}
+
+.hero-section .btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .btn:hover {
+  background-color: #1d4ed8;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  width: 31%;
+  min-width: 280px;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.feature-card h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.feature-card p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-top: 0.5rem;
+}
+
+.prose {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  line-height: 1.8;
+  font-size: 1.25rem;
+  max-width: 100%;
+  margin-bottom: 4rem;
+  text-align: justify;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.prose h2, .prose h3 {
+  margin-top: 2rem;
+  font-weight: 800;
+  color: #1e3a8a;
+}
+
+.prose ul {
+  padding-left: 2rem;
+  margin: 1.5rem 0;
+}
+
+.prose li {
+  margin-bottom: 1rem;
+}
+
+.video-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.video-section video {
+  max-width: 640px;
+  width: 90%;
+  border-radius: 1rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+  margin-top: 1rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .feature-card {
+    width: 48%;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 100%;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .prose {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .video-section h2 {
+    font-size: 1.5rem;
   }
 }
