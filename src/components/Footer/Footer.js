@@ -16,14 +16,14 @@ function Footer() {
           <p>📞 (123) 456-7890 &nbsp; | &nbsp; 📠 (123) 456-7890</p>
           <div className="footer-social">
             <span>Social Media</span>
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaTwitter /></a>
-            <a href="#"><FaLinkedinIn /></a>
-            <a href="#"><FaYoutube /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaGooglePlusG /></a>
-            <a href="#"><FaPinterestP /></a>
-            <a href="#"><FaRss /></a>
+            <a href="https://www.facebook.com/?locale=vi_VN"><FaFacebookF /></a>
+            <a href="https://x.com/"><FaTwitter /></a>
+            <a href="https://fontawesome.com/icons/linkedin-in"><FaLinkedinIn /></a>
+            <a href="https://www.youtube.com/?app=desktop&hl=vi"><FaYoutube /></a>
+            <a href="https://www.instagram.com/"><FaInstagram /></a>
+            <a href="https://fontawesome.com/v4/icon/google-plus"><FaGooglePlusG /></a>
+            <a href="https://www.pinterest.com/"><FaPinterestP /></a>
+            <a href="https://www.rss.com/"><FaRss /></a>
           </div>
         </div>
       </div>
