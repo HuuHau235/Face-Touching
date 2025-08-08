@@ -7,7 +7,6 @@ import demoVideo from '../../assets/video.mp4';
 function HomePage() {
   return (
     <div className="home-container px-4 py-8 max-w-4xl mx-auto text-justify">
-      {/* Hero section */}
       <motion.header
         className="hero-section text-center mb-10"
         initial={{ opacity: 0, y: -30 }}
@@ -19,7 +18,6 @@ function HomePage() {
         <Link to="/test" className="start-btn">Bắt đầu kiểm tra ngay</Link>
       </motion.header>
 
-      {/* Features */}
       <motion.section
         className="features-section grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10"
         initial={{ opacity: 0, y: 50 }}
@@ -46,7 +44,6 @@ function HomePage() {
         </motion.div>
       </motion.section>
 
-      {/* Educational Content */}
       <motion.section
         className="education-content"
         initial={{ opacity: 0 }}
@@ -126,7 +123,6 @@ function HomePage() {
         </div>
       </motion.section>
 
-      {/* Video Demo */}
       <motion.section
         className="video-section mt-12"
         initial={{ opacity: 0, scale: 0.95 }}
