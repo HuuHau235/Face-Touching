@@ -7,14 +7,6 @@ import meImage from "../../assets/me.png";
 function AboutUs() {
   return (
     <div className="about-container">
-      <motion.div
-        className="about-video"
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        <video src={aboutVideo} autoPlay loop muted playsInline controls />
-      </motion.div>
 
       <motion.h1
         className="about-title"
@@ -68,6 +60,14 @@ function AboutUs() {
           <li>⚡ Tốc độ và hiệu quả</li>
           <li>🚀 Luôn hướng tới trải nghiệm người dùng</li>
         </ul>
+      </motion.div>
+      <motion.div
+        className="about-video"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        <video src={aboutVideo} autoPlay loop muted playsInline controls />
       </motion.div>
     </div>
   );
